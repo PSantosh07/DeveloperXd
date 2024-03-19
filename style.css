@@ -1,0 +1,401 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+  }
+  
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+  
+  .hero {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .hero-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .hero-nav li {
+    margin: 0 1rem;
+  }
+  
+  .hero-nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Main section styles */
+  main {
+    padding: 2rem 0;
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  .about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+  }
+  
+  .about-portrait {
+    width: 200px; /* Set the width of the image */
+    height: 200px; /* Set the height of the image */
+    border-radius: 50%; /* Make it a perfect circle */
+    margin-right: 2rem; /* Add some margin to separate from the text */
+  }
+
+  .about-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .about-description {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .about-text {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .about p {
+    margin-bottom: 1rem;
+  }
+  
+  .about-skills {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-skills li {
+    margin: 0 1rem;
+  }
+  
+  
+  .services {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    justify-items: center;
+  }
+  
+  .service-card {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .service-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .service-card i {
+    font-size: 3rem;
+    color: #007bff;
+    margin-top: 20px;
+  }
+  
+  
+  .portfolio {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  
+  
+  .portfolio {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    width: 300px; /* Adjust the width as needed */
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .project-details {
+    padding: 20px;
+  }
+  
+  .project-details h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .project-details p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+  
+  .project-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #0056b3;
+  }
+  
+  .testimonial-slider {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scroll-snap-type: x mandatory; /* Ensure each testimonial snaps into view */
+  }
+  
+  .testimonial {
+    width: 300px; /* Set a fixed width for each testimonial */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    scroll-snap-align: start; /* Ensure each testimonial starts at the beginning of the container */
+  }
+  
+  .testimonial-content {
+    padding: 20px;
+  }
+  
+  .testimonial img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0; /* Apply curved border only to the top */
+  }
+  
+  .testimonial-text {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .testimonial-author-name {
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #666;
+  }
+  
+  
+
+  .contact {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .contact p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    color: #666;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .contact-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info {
+    margin-top: 40px;
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #666;
+  }
+  
+  .contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #0056b3;
+  }
+  
+  
+  /* Footer styles */
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+  }
+  
+  .about-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #ff007f, #8000ff, #0000ff); /* Gradient from pink to purple to blue */
+    -webkit-background-clip: text; /* Clip the text to the background */
+    -webkit-text-fill-color: transparent; /* Fill the text with the background color */
+  }
+  
+  
