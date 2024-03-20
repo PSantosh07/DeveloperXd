@@ -99,6 +99,41 @@ main {
   height: 200px;
   border-radius: 50%;
   margin-right: 2rem;
+  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.about-portrait:hover {
+  transform: scale(1.1); /* Scale the image to 110% on hover */
+}
+
+.about-heading .text {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+}
+
+.about-heading .text::after {
+  content: '|'; /* Cursor */
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: typingAndErasing 6s steps(40) infinite, blinkCursor 0.5s infinite step-end 0s; /* Blink cursor animation */
+}
+
+@keyframes typingAndErasing {
+  0%, 50% {
+      width: 100%;
+  }
+  55%, 100% {
+      width: 0;
+  }
+}
+
+@keyframes blinkCursor {
+  50% {
+      opacity: 0;
+  }
 }
 
 .about-heading {
